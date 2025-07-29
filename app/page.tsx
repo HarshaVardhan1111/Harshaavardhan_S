@@ -146,7 +146,7 @@ export default function AppleStylePortfolio() {
       image: "/Images/docker-original-wordmark.svg",
       category: "DevOps",
       icon: Server,
-      color: "from-blue-400 via-blue-500 to-cyan-500",
+      color: "from-400 via-500 to-500",
       technologies: ["Kubernetes(Basic)", "Docker", "linux Command Line"],
     },
     {
@@ -155,7 +155,7 @@ export default function AppleStylePortfolio() {
       image: "/Images/postgresql-original.svg",
       category: "Database & Monitoring",
       icon: Database,
-      color: "from-green-400 via-emerald-500 to-teal-500",
+      color: "from-400 via-500 to-500",
       technologies: ["PostgreSQL", "Redis", "MongoDB", "Database Optimization", "Replication"],
     },
     {
@@ -219,7 +219,7 @@ export default function AppleStylePortfolio() {
       technologies: ["React", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
       status: "Development",
       github: "https://github.com/HarshaVardhan1111/PradeepJoel-Portfolio.git",
-      image: "/placeholder.svg?height=800&width=1200&text=PradeepJoel+Portfolio",
+      image: "/Images/IMG_8393.jpeg",
       metrics: { DevelopmentPhase: "3rd Phase", TotalPhase: "5", Completed: "75%" },
     },
   ]
