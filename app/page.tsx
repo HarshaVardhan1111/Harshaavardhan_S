@@ -143,7 +143,7 @@ export default function AppleStylePortfolio() {
     {
       name: "Container Orchestration & Scrpting",
       description: "Hands-on experience and Knowledge of Kubernetes(Basic), Docker, linux, and container security",
-      image: "/placeholder.svg?height=600&width=800&text=Kubernetes+Docker+Orchestration",
+      image: "/",
       category: "DevOps",
       icon: Server,
       color: "from-blue-400 via-blue-500 to-cyan-500",
@@ -164,7 +164,7 @@ export default function AppleStylePortfolio() {
       image: "/placeholder.svg?height=600&width=800&text=Mechanical+Engineering",
       category: "Education",
       icon: Briefcase,
-      color: "from-gray-400 via-gray-500 to-gray-600",
+      color: "from-gray-400 via-gray-500 to-gray-500",
       technologies: ["Mechanical Engineering", "Design Optimization", "Finite Element Analysis"],
     },
     {
@@ -173,7 +173,7 @@ export default function AppleStylePortfolio() {
       image: "/placeholder.svg?height=600&width=800&text=Schooling+Higher+Secondary",
       category: "Education",
       icon: Briefcase,
-      color: "from-gray-400 via-gray-500 to-gray-600",
+      color: "from-gray-400 via-gray-500 to-gray-500",
       technologies: ["Mechanical Engineering", "Design Optimization", "Finite Element Analysis"],
     },
     {
@@ -197,7 +197,7 @@ export default function AppleStylePortfolio() {
       status: "Development",
       github: "https://github.com/HarshaVardhan1111/Server-Health-Monitoring-Automation-Platform.git",
       demo: "https://github.com/HarshaVardhan1111/Server-Health-Monitoring-Automation-Platform.git",
-      image: "/images/SHMA.jpg",
+      image: "/Images/SHMA.jpg",
       metrics: { Devlopment_Stage: "3rd Phase", TotalPhase: "5" },
     },
     {
@@ -208,7 +208,7 @@ export default function AppleStylePortfolio() {
       technologies: ["PostgreSQL", "REST API", "Supabase", "API integration", "React", "Typescript", "HTML", "CSS"],
       status: "Development",
       github: "https://github.com/HarshaVardhan1111/Spark-AI.git",
-      image: "/images/spark.jpg",
+      image: "/Images/spark.jpg",
       metrics: { DevelopmentPhase: "2nd Phase", TotalPhase: "10", Completed: "45%" },
     },
     {
