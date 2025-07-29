@@ -134,7 +134,7 @@ export default function AppleStylePortfolio() {
     {
       name: "Python Enthusiast",
       description: "Learned REST APIs with Flask and Python in 2025 - Udemy",
-      image: "/placeholder.svg?height=600&width=800&text=Python+FastAPI+Development",
+      image: "/Images/python-original.svg",
       category: "Backend",
       icon: Code2,
       color: "from-yellow-400 via-yellow-500 to-orange-500",
