@@ -242,9 +242,9 @@ export default function AppleStylePortfolio() {
     category: "System Administration",
     icon: Server,
     color: "from-green-500 to-emerald-600",
-    skills: ["Linux Commands", "File Management", "Process Control", "System Admin"],
-    certificateUrl: "/certificates/linux-linkedin.pdf",
-    credentialId: "LIL-2024-001"
+    skills: ["Linux Commands", "linux System Admin", "CLI"],
+    certificateUrl: "/CertificateOfCompletion_Learning Linux Command Line.pdf",
+    credentialId: "08d6e6d8228eb05a0ecf44e0b6c8764b11b6fe9450692cd62b15f41c9a3a5f61"
   },
   {
     title: "Grafana Fundamentals",
@@ -255,8 +255,8 @@ export default function AppleStylePortfolio() {
     icon: Database,
     color: "from-orange-500 to-red-600",
     skills: ["Dashboard Creation", "Data Visualization", "Alerting", "Monitoring"],
-    certificateUrl: "/certificates/grafana-udemy.pdf",
-    credentialId: "UC-GRAFANA-2024"
+    certificateUrl: "/Grafana_Cer.pdf",
+    credentialId: "UC-5d12c384-aed5-46c2-9781-533d755764e6"
   },
   {
     title: "Docker & Kubernetes Complete Guide",
@@ -271,7 +271,7 @@ export default function AppleStylePortfolio() {
     credentialId: "UC-DOCKER-K8S-2024"
   },
   {
-    title: "REST APIs with Python 2025",
+    title: "REST APIs with Flask and Python in 2025",
     provider: "Udemy",
     date: "2025",
     description: "Advanced course on building scalable REST APIs using Python, Flask, authentication, and modern development practices.",
@@ -279,8 +279,8 @@ export default function AppleStylePortfolio() {
     icon: Code2,
     color: "from-purple-500 to-indigo-600",
     skills: ["Python", "Flask", "REST API", "Authentication", "Testing"],
-    certificateUrl: "/certificates/python-rest-api-udemy.pdf",
-    credentialId: "UC-PYTHON-API-2025"
+    certificateUrl: "/RestAPI_With_Python_Cer.pdf",
+    credentialId: "UC-618f21a1-3abb-4802-bd1f-169ec5c770f6"
   },
 ]
   const handleViewCertificate = (certificateUrl: string) => {
