@@ -31,6 +31,8 @@ import {
   Menu,
   X,
   ArrowUpRight,
+  GraduationCap,
+  eye,
 } from "lucide-react"
 
 export default function AppleStylePortfolio() {
@@ -45,6 +47,7 @@ export default function AppleStylePortfolio() {
   const aboutRef = useRef<HTMLElement>(null)
   const skillsRef = useRef<HTMLElement>(null)
   const projectsRef = useRef<HTMLElement>(null)
+  const certificatesRef = useRef<HTMLElement>(null)
   const contactRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -84,7 +87,7 @@ export default function AppleStylePortfolio() {
       { threshold: 0.1, rootMargin: "-50px" },
     )
 
-    const sections = [heroRef, aboutRef, skillsRef, projectsRef, contactRef]
+    const sections = [heroRef, aboutRef, skillsRef, projectsRef,certificatesRef, contactRef]
     sections.forEach((ref) => {
       if (ref.current) observer.observe(ref.current)
     })
@@ -230,6 +233,66 @@ export default function AppleStylePortfolio() {
     link.download = 'Harshaavardhan_Subramani_Devops.pdf'; // replace with your desired file name
     link.click();
   };
+  const certificates = [
+  {
+    title: "Linux Command Line Essentials",
+    provider: "LinkedIn Learning",
+    date: "2024",
+    description: "Mastered essential Linux command line operations, file management, process control, and system administration fundamentals.",
+    category: "System Administration",
+    icon: Server,
+    color: "from-green-500 to-emerald-600",
+    skills: ["Linux Commands", "File Management", "Process Control", "System Admin"],
+    certificateUrl: "/certificates/linux-linkedin.pdf",
+    credentialId: "LIL-2024-001"
+  },
+  {
+    title: "Grafana Fundamentals",
+    provider: "Udemy",
+    date: "2024",
+    description: "Comprehensive training on Grafana dashboard creation, data visualization, alerting, and monitoring best practices.",
+    category: "Monitoring & Visualization",
+    icon: Database,
+    color: "from-orange-500 to-red-600",
+    skills: ["Dashboard Creation", "Data Visualization", "Alerting", "Monitoring"],
+    certificateUrl: "/certificates/grafana-udemy.pdf",
+    credentialId: "UC-GRAFANA-2024"
+  },
+  {
+    title: "Docker & Kubernetes Complete Guide",
+    provider: "Udemy",
+    date: "2024",
+    description: "In-depth course covering containerization with Docker, orchestration with Kubernetes, and microservices deployment.",
+    category: "Container Orchestration",
+    icon: Shield,
+    color: "from-blue-500 to-cyan-600",
+    skills: ["Docker", "Kubernetes", "Container Security", "Microservices"],
+    certificateUrl: "/certificates/docker-kubernetes-udemy.pdf",
+    credentialId: "UC-DOCKER-K8S-2024"
+  },
+  {
+    title: "REST APIs with Python 2025",
+    provider: "Udemy",
+    date: "2025",
+    description: "Advanced course on building scalable REST APIs using Python, Flask, authentication, and modern development practices.",
+    category: "Backend Development",
+    icon: Code2,
+    color: "from-purple-500 to-indigo-600",
+    skills: ["Python", "Flask", "REST API", "Authentication", "Testing"],
+    certificateUrl: "/certificates/python-rest-api-udemy.pdf",
+    credentialId: "UC-PYTHON-API-2025"
+  },
+]
+  const handleViewCertificate = (certificateUrl: string) => {
+  window.open(certificateUrl, '_blank');
+};
+
+const handleDownloadCertificate = (certificateUrl: string, title: string) => {
+  const link = document.createElement('a');
+  link.href = certificateUrl;
+  link.download = `${title.replace(/\s+/g, '_')}_Certificate.pdf`;
+  link.click();
+};
 
   const socialLinks = [
     {
@@ -743,6 +806,133 @@ export default function AppleStylePortfolio() {
           </div>
         </div>
       </section>
+      {/* Certificates Section */}
+<section ref={certificatesRef} id="certificates" className="py-20 lg:py-32 bg-gray-50 dark:bg-gray-900/50 relative z-10">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16 lg:mb-20 scroll-animate">
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 tracking-tight">
+        <span className="bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
+          Certifications
+        </span>
+      </h2>
+      <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full" />
+      <p className="text-xl font-light text-gray-600 dark:text-gray-300 mt-8 max-w-3xl mx-auto">
+        Continuous learning through industry-recognized certifications and professional development
+      </p>
+    </div>
+
+    {/* Certificates Grid */}
+    <div className="grid md:grid-cols-2 gap-8 lg:gap-12 scroll-animate">
+      {certificates.map((cert, index) => (
+        <Card
+          key={index}
+          className="group relative overflow-hidden bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-0 shadow-xl rounded-3xl hover:shadow-2xl transition-all duration-500 hover:scale-105"
+        >
+          {/* Background Gradient */}
+          <div
+            className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
+          />
+
+          <div className="p-8 lg:p-10 relative z-10">
+            {/* Header */}
+            <div className="flex items-start justify-between mb-6">
+              <div
+                className={`w-16 h-16 bg-gradient-to-br ${cert.color} rounded-2xl flex items-center justify-center flex-shrink-0`}
+              >
+                <cert.icon className="h-8 w-8 text-white" />
+              </div>
+              <div className="text-right ml-4">
+                <Badge className="bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium mb-2">
+                  {cert.category}
+                </Badge>
+                <div className="text-sm text-gray-500 dark:text-gray-400 font-medium">
+                  {cert.date}
+                </div>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl lg:text-3xl font-bold tracking-tight mb-2">
+                  {cert.title}
+                </h3>
+                <p className="text-lg font-semibold text-blue-600 mb-1">
+                  {cert.provider}
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  ID: {cert.credentialId}
+                </p>
+              </div>
+
+              <p className="text-base font-light text-gray-600 dark:text-gray-300 leading-relaxed">
+                {cert.description}
+              </p>
+
+              {/* Skills */}
+              <div className="flex flex-wrap gap-2">
+                {cert.skills.map((skill) => (
+                  <Badge
+                    key={skill}
+                    className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full text-xs font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+
+              {/* Actions */}
+              <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                <Button
+                  variant="outline"
+                  onClick={() => handleViewCertificate(cert.certificateUrl)}
+                  className="border-2 border-gray-300 dark:border-gray-600 hover:border-blue-600 dark:hover:border-blue-400 px-6 py-3 rounded-2xl font-medium bg-transparent hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-all duration-300 flex-1"
+                >
+                  <Eye className="mr-2 h-4 w-4" />
+                  View Certificate
+                </Button>
+                <Button
+                  onClick={() => handleDownloadCertificate(cert.certificateUrl, cert.title)}
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-3 rounded-2xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex-1"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download
+                </Button>
+              </div>
+            </div>
+          </div>
+        </Card>
+      ))}
+    </div>
+
+    {/* Certificate Stats */}
+    <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 scroll-animate">
+      <Card className="p-6 lg:p-8 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-0 shadow-xl rounded-3xl text-center hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <GraduationCap className="h-10 w-10 text-green-600 mx-auto mb-4" />
+        <div className="text-4xl font-bold text-green-600 mb-2">{certificates.length}</div>
+        <div className="text-sm font-medium text-gray-600 dark:text-gray-300">Total Certificates</div>
+      </Card>
+      
+      <Card className="p-6 lg:p-8 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-0 shadow-xl rounded-3xl text-center hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <Award className="h-10 w-10 text-blue-600 mx-auto mb-4" />
+        <div className="text-4xl font-bold text-blue-600 mb-2">2</div>
+        <div className="text-sm font-medium text-gray-600 dark:text-gray-300">Learning Platforms</div>
+      </Card>
+      
+      <Card className="p-6 lg:p-8 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-0 shadow-xl rounded-3xl text-center hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <Target className="h-10 w-10 text-purple-600 mx-auto mb-4" />
+        <div className="text-4xl font-bold text-purple-600 mb-2">4</div>
+        <div className="text-sm font-medium text-gray-600 dark:text-gray-300">Specializations</div>
+      </Card>
+      
+      <Card className="p-6 lg:p-8 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-0 shadow-xl rounded-3xl text-center hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <Zap className="h-10 w-10 text-orange-600 mx-auto mb-4" />
+        <div className="text-4xl font-bold text-orange-600 mb-2">100%</div>
+        <div className="text-sm font-medium text-gray-600 dark:text-gray-300">Completion Rate</div>
+      </Card>
+    </div>
+  </div>
+</section>
 
       {/* Contact Section */}
       <section ref={contactRef} id="contact" className="py-20 lg:py-32 bg-gray-50 dark:bg-gray-900/50 relative z-10">
