@@ -224,7 +224,7 @@ export default function AppleStylePortfolio() {
     },
   ]
   const handleDownloadResume = () => {
-    const resumeUrl = 'public\Harshaavardhan_Subramani_Devops.pdf'; // replace with your resume URL
+    const resumeUrl = '/Harshaavardhan_Subramani_Devops.pdf'; // replace with your resume URL
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Harshaavardhan_Subramani_Devops.pdf'; // replace with your desired file name
