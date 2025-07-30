@@ -763,7 +763,6 @@ export default function AppleStylePortfolio() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-20 scroll-animate">
             {[
               { icon: Mail, title: "Email", value: "harshajeys.11@gmail.com", color: "from-blue-500 to-blue-600" },
-              { icon: Phone, title: "Phone", value: "+91 6369291823", color: "from-green-500 to-green-600" },
               { icon: MapPin, title: "Location", value: "India", color: "from-purple-500 to-purple-600" },
               { icon: Instagram, title: "Instagram", value: "@harshavardhan_rs_", color: "from-pink-500 to-pink-600" },
             ].map((contact, index) => (
