@@ -1,7 +1,7 @@
 # 💼 Personal Portfolio Website – Advanced Developer Profile
 
-**🔗 Live Portfolio**: [https://your-portfolio-link.com](https://your-portfolio-link.com)  
-**🛠 GitHub Repo**: [https://github.com/HarshaVardhan1111/your-portfolio-repo](https://github.com/HarshaVardhan1111/Harshaavardhan_S.git)
+**🔗 Live Portfolio**: [Portfolio Webiste](https://harshaavardhan-s.vercel.app/)  
+**🛠 GitHub Repo**: [Github Repo](https://github.com/HarshaVardhan1111/Harshaavardhan_S.git)
 
 ## 📌 Project Description
 
