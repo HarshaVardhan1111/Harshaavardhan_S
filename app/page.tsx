@@ -474,10 +474,14 @@ export default function AppleStylePortfolio() {
             <div className="space-y-8 scroll-animate">
               <div className="space-y-6 text-lg font-light leading-relaxed text-gray-600 dark:text-gray-300">
                 <p>
-                  I’m a driven Python Automation and DevOps Engineer at{" "}
-                  <span className="text-blue-600 font-semibold">Comcast</span>, with 2.5 years of experience in building efficient, scalable infrastructure and automation solutions to support high-impact operations.
-                  I specialize in backend automation using Python, REST APIs, Linux, and PostgreSQL, and have hands-on experience implementing CI/CD pipelines, Docker, Kubernetes, and monitoring with Prometheus and Grafana. I’ve successfully developed automation tools that reduced manual ad operations workflows and improved system reliability.
-                </p>
+  I’m currently working as an <span className="font-semibold">Ad Operations Analyst - 1</span> at{" "}
+  <span className="text-blue-600 font-semibold">Comcast</span>, where I’ve gained 2.5 years of experience optimizing operations and driving process improvements. While my core role involves performance monitoring and data validation, I’ve proactively developed automation tools using{" "}
+  <span className="font-semibold">Python, Linux, and REST APIs</span> to streamline repetitive workflows — including a Python-based stats automation system that significantly reduced manual effort and improved team efficiency.
+  <br /><br />
+  Alongside my current role, I’m building hands-on skills in{" "}
+  <span className="font-semibold">DevOps</span> by working on backend automation projects and learning tools like{" "}
+  <span className="font-semibold">Docker, Kubernetes, CI/CD pipelines, Prometheus, and Grafana</span>. This transition reflects my passion for scalable infrastructure and system reliability.
+</p>
                 {/* <p>
                 My focus is on bridging development and operations—creating systems that are not just functional, but also reliable, maintainable, and aligned with business goals.
                 Currently, I’m deepening my expertise in DevOps and cloud-native technologies to deliver end-to-end infrastructure solutions that solve real-world problems.
