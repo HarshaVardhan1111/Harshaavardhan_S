@@ -761,25 +761,26 @@ export default function AppleStylePortfolio() {
 
           {/* Contact Info */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-20 scroll-animate">
-            {[
-              { icon: Mail, title: "Email", value: "harshajeys.11@gmail.com", color: "from-blue-500 to-blue-600" },
-              { icon: MapPin, title: "Location", value: "India", color: "from-purple-500 to-purple-600" },
-              { icon: Instagram, title: "Instagram", value: "@harshavardhan_rs_", color: "from-pink-500 to-pink-600" },
-            ].map((contact, index) => (
-              <Card
-                key={index}
-                className="p-6 lg:p-8 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-0 shadow-xl rounded-3xl text-center hover:shadow-2xl hover:scale-105 transition-all duration-300"
-              >
-                <div
-                  className={`w-16 h-16 bg-gradient-to-br ${contact.color} rounded-2xl flex items-center justify-center mx-auto mb-6`}
-                >
-                  <contact.icon className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="font-semibold text-lg mb-2">{contact.title}</h3>
-                <p className="text-sm font-light text-gray-600 dark:text-gray-300">{contact.value}</p>
-              </Card>
-            ))}
-          </div>
+  {[
+    { icon: Mail, title: "Email", value: "harshajeys.11@gmail.com", color: "from-blue-500 to-blue-600" },
+    { icon: MapPin, title: "Location", value: "India", color: "from-purple-500 to-purple-600" },
+    { icon: Instagram, title: "Instagram", value: "@harshavardhan_rs_", color: "from-pink-500 to-pink-600" },
+  ].map((contact, index) => (
+    <Card
+      key={index}
+      className="p-6 lg:p-8 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-0 shadow-xl rounded-3xl text-center hover:shadow-2xl hover:scale-105 transition-all duration-300"
+    >
+      <div
+        className={`w-16 h-16 bg-gradient-to-br ${contact.color} rounded-2xl flex items-center justify-center mx-auto mb-6`}
+      >
+        <contact.icon className="h-8 w-8 text-white" />
+      </div>
+      <h3 className="font-semibold text-lg mb-2">{contact.title}</h3>
+      <p className="text-sm font-light text-gray-600 dark:text-gray-300">{contact.value}</p>
+    </Card>
+  ))}
+</div>
+
 
           {/* Apple-style Social Media Section */}
           <div className="scroll-animate">
