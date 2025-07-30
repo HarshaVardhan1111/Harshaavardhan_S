@@ -138,7 +138,7 @@ export default function AppleStylePortfolio() {
       category: "Backend",
       icon: Code2,
       color: "from-400 via-500 to-500",
-      technologies: ["Python", "FastAPI",],
+      technologies: ["Python", "RESTapi",],
     },
     {
       name: "Container Orchestration & Scrpting",
@@ -156,7 +156,7 @@ export default function AppleStylePortfolio() {
       category: "Database & Monitoring",
       icon: Database,
       color: "from-400 via-500 to-500",
-      technologies: ["PostgreSQL", "Redis", "MongoDB", "Database Optimization", "Replication"],
+      technologies: ["PostgreSQL", "SQL", "Grafana", "Prometheus"],
     },
     {
     name: "Mechanical Engineering",
@@ -174,15 +174,15 @@ export default function AppleStylePortfolio() {
       category: "Education",
       icon: Briefcase,
       color: "from-gray-400 via-gray-500 to-gray-500",
-      technologies: ["Mechanical Engineering", "Design Optimization", "Finite Element Analysis"],
+      technologies: ["Computer Science"],
     },
     {
       name: "CI/CD Automation",
       description: "Hands-on experience with Git, GitHub, GitHub Actions, and automated testing pipelines",
-      image: "/placeholder.svg?height=600&width=800&text=Jenkins+GitHub+Actions",
+      image: "/Images/git-original.svg",
       category: "Automation",
       icon: Settings,
-      color: "from-indigo-400 via-blue-500 to-purple-500",
+      color: "from-400 via-500 to-500",
       technologies: ["GitHub Actions", "Git", "GitHub"],
     },
   ]
