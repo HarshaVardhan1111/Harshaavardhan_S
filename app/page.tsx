@@ -32,7 +32,7 @@ import {
   X,
   ArrowUpRight,
   GraduationCap,
-  eye,
+  Eye,
 } from "lucide-react"
 
 export default function AppleStylePortfolio() {
@@ -144,7 +144,7 @@ export default function AppleStylePortfolio() {
       technologies: ["Python", "RESTapi",],
     },
     {
-      name: "Container Orchestration & Scrpting",
+      name: "Container Orchestration & Scripting",
       description: "Hands-on experience and Knowledge of Kubernetes(Basic), Docker, linux, and container security",
       image: "/Images/docker-original-wordmark.svg",
       category: "DevOps",
@@ -153,7 +153,7 @@ export default function AppleStylePortfolio() {
       technologies: ["Kubernetes(Basic)", "Docker", "linux Command Line"],
     },
     {
-      name: "Database & Montioring",
+      name: "Database & Monitoring",
       description: "Knowledge of PostgreSQL, Grafana, Prometheus, along with hands-on experience",
       image: "/Images/postgresql-original.svg",
       category: "Database & Monitoring",
@@ -404,7 +404,7 @@ const handleDownloadCertificate = (certificateUrl: string, title: string) => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex space-x-8">
-              {["hero", "about", "skills", "projects", "contact"].map((section) => (
+              {["hero", "about", "skills", "projects","certificates", "contact"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
