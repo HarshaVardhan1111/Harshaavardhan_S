@@ -442,7 +442,7 @@ const handleDownloadCertificate = (certificateUrl: string, title: string) => {
         {isMenuOpen && (
           <div className="lg:hidden absolute top-full left-0 right-0 backdrop-blur-2xl bg-white/95 dark:bg-black/95 border-b border-gray-200/20 dark:border-gray-800/20">
             <div className="px-4 py-6 space-y-4">
-              {["hero", "about", "skills", "projects", "contact"].map((section) => (
+              {["hero", "about", "skills", "projects","Certificates", "contact"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
