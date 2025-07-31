@@ -607,7 +607,7 @@ const handleDownloadCertificate = (certificateUrl: string, title: string) => {
           <div className="text-center mb-16 lg:mb-20 scroll-animate">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 tracking-tight">
               <span className="bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
-                Expertise
+                Skills
               </span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full" />
